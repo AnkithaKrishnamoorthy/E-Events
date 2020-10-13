@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:background="#FF9800"
+        android:textColor="#494040"
+        android:textSize="35dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EVENTO"
+        android:textStyle="italic"
+        android:background="#FF9800"
+        android:gravity="center_horizontal"
+        android:textColor="#494040"
+        android:textSize="35dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/addd" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp">
+
+        <ImageButton
+            android:id="@+id/click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/ic_baseline_photo_camera_24"
+            android:gravity="center_horizontal"
+            />
+
+        <ImageButton
+            android:id="@+id/take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/ic_baseline_image_24"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextentername"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Enter Username"
+        android:textColor="#494040"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#494040"
+        android:background="#11000000"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_adb_24"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextpassword"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="70dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:textColor="#494040"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#494040"
+        android:background="#11000000"
+        android:focusable="true"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attempts Left:"
+            android:layout_marginLeft="30dp"
+            android:textSize="15dp"
+            android:textColor="#494040"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/textViewattemptsleft"
+            android:textSize="15dp"
+            android:layout_marginLeft="150dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:id="@+id/buttonlogin"
+        android:gravity="center_horizontal"
+        android:background="#FF9800"
+        android:textColor="#494040"
+        android:textSize="35dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="#494040"
+        android:textSize="15dp"
+        android:text="Sign up if you don't have an account"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:gravity="center_horizontal"
+            android:background="#FF9800"
+            android:id="@+id/buttonsignup"
+            android:textColor="#494040"
+            android:textSize="25dp"
+            android:layout_marginLeft="40dp"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:gravity="center_horizontal"
+            android:background="#FF9800"
+            android:id="@+id/buttoncancel"
+            android:textColor="#494040"
+            android:textSize="25dp"
+            android:layout_marginLeft="40dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
